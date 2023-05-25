@@ -1,8 +1,9 @@
 import './App.css';
+import AppartementList from './Appartements';
 
 function App() {
   return (
-    <h1>Bonjour</h1>
+    <AppartementList />
   );
 }
 
