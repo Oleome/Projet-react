@@ -1,3 +1,5 @@
+import Card from "./components/Cards"
+
 const AppartList = [
 	{
 		"id": "c67ab8a7",
@@ -618,14 +620,17 @@ const AppartList = [
 	}
 ]
 
-
 function Appartement() {
     return (
-        <ul>
+        <div>
             {AppartList.map((item) => (
-                <li>{item.title}</li>
+				<Card
+				key={item.id}
+				title={item.title}
+				description={item.description}
+				/>
             ))}
-        </ul>
+        </div>
     )
 }
 
