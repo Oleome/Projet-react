@@ -629,6 +629,7 @@ function Appartement() {
 				title={item.title}
 				description={item.description}
 				cover={item.cover}
+				tags={item.tags}
 				/>
             ))}
         </div>
