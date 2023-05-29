@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import logo from '../../assets/logo.png'
 
 const StyledLinked = styled(Link)`
     padding-right: 15px;
@@ -7,12 +8,13 @@ const StyledLinked = styled(Link)`
  
 function Header() {
     return (
-        <nav>
-            <StyledLinked to="/">Accueil</StyledLinked>
-            <StyledLinked to="/A-propos">A-propos</StyledLinked>
-            <StyledLinked to="/Footer">Footer</StyledLinked>
-            <StyledLinked to="/Fiche_Logement">Fiche Logement</StyledLinked>
-        </nav>
+        <div>
+            <img src={logo} alt="logo de kasa" />
+            <nav>
+                <StyledLinked to="/">Accueil</StyledLinked>
+                <StyledLinked to="/A-propos">A-propos</StyledLinked>
+            </nav>
+        </div>
     )
 }
 
