@@ -4,19 +4,26 @@ import logo from '../../assets/logo.png'
 
 const StyledLinked = styled(Link)`
     padding-right: 15px;
+    font-size: 24px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 `
 
 const KasaLogo = styled.img`
-    width: 80px;
+    width: 210px;
+    height: 68px;
 `
 
 const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
+    align-items: center;
 `
 
 
- 
 function Header() {
     return (
         <StyledHeader>
