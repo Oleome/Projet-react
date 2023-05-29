@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import App from './pages/home/index';
-import Survey from './pages/survey';
+import Home from './pages/Home/';
+import APropos from './pages/A-propos/index';
 import Header from './components/Header/index'
 import Error from './components/Error';
  
@@ -11,8 +11,8 @@ ReactDOM.render(
         <Router>
           <Header />
           <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/survey" element={<Survey />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/A-propos/" element={<APropos />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Router>
