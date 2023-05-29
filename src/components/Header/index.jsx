@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import logo from '../../assets/logo.png'
 
 const StyledLinked = styled(Link)`
-    padding-right: 15px;
+    padding-left: 57px;
     font-size: 24px;
     text-decoration: none;
     &:hover {
@@ -21,6 +21,8 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 100px 68px;
+    background-color: #E5E5E5;
 `
 
 
