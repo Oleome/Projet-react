@@ -1,13 +1,16 @@
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import logo from '../../assets/logo.png'
+import logfoot from '../../assets/logfoot.png'
+
+const StyledFooter = styled.footer`
+    background-color: black;
+`
 
 
 function Footer() {
     return (
-        <div>
-            <img src={logo} alt="logo de kasa" />
-        </div>
+        <StyledFooter>
+            <img src={logfoot} alt="logo de kasa" />
+        </StyledFooter>
     )
 }
 
