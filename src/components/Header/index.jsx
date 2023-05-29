@@ -5,16 +5,27 @@ import logo from '../../assets/logo.png'
 const StyledLinked = styled(Link)`
     padding-right: 15px;
 `
+
+const KasaLogo = styled.img`
+    width: 80px;
+`
+
+const StyledHeader = styled.header`
+    display: flex;
+    justify-content: space-between;
+`
+
+
  
 function Header() {
     return (
-        <div>
-            <img src={logo} alt="logo de kasa" />
+        <StyledHeader>
+            <KasaLogo src={logo} alt="logo de kasa" />
             <nav>
                 <StyledLinked to="/">Accueil</StyledLinked>
                 <StyledLinked to="/A-propos">A-propos</StyledLinked>
             </nav>
-        </div>
+        </StyledHeader>
     )
 }
 
