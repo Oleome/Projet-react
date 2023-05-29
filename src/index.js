@@ -6,6 +6,7 @@ import APropos from './pages/A-propos/index';
 import Header from './components/Header/index';
 import Footer from './components/Footer';
 import Error from './components/Error';
+import './styles/index.css'
  
 ReactDOM.render(
     <React.StrictMode>
