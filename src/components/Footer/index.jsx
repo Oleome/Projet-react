@@ -7,6 +7,13 @@ const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 24px;
+    @media screen and (max-width: 960px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 650px) {
+        font-size: 12px;
+    }
 `
 
 const StyledLogo = styled.img `
