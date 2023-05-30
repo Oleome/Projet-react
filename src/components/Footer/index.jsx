@@ -4,6 +4,10 @@ import logfoot from '../../assets/logfoot.png'
 const StyledFooter = styled.footer`
     background-color: black;
     height: 209px;
+    position: absolute;
+    min-width: 300px;
+    bottom: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

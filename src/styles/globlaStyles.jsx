@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Montserrat', sans-serif;
     }
+    body{
+        min-width: 300px;
+    }
 `
 
 export default GlobalStyle

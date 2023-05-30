@@ -3,18 +3,11 @@ import styled from 'styled-components'
 import logo from '../../assets/logo.png'
 
 const StyledLinked = styled(Link)`
-    font-size: 24px;
     text-decoration: none;
     padding-left: 40px;
     &:hover {
         text-decoration: underline;
         cursor: pointer;
-    }
-    @media screen and (max-width: 960px) {
-        font-size: 18px;
-    }
-    @media screen and (max-width: 650px) {
-        font-size: 12px;
     }
 `
 
@@ -26,9 +19,18 @@ const KasaLogo = styled.img`
 const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
+    min-width: 300px;
+    padding: 40px 100px;
+    font-size: 24px;
     align-items: center;
-    padding: 2% 5%;
     background-color: #E5E5E5;
+    @media screen and (max-width: 960px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 650px) {
+        font-size: 12px;
+        padding: 20px 20px;
+    }
 `
 
 const StyledNav = styled.nav`

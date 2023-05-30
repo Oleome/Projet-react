@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import APropos from './pages/aPropos';
+import Error from './pages/error';
 import Header from './components/Header/index';
 import Footer from './components/Footer';
-import Error from './components/Error';
 import GlobalStyle from './styles/globlaStyles'
  
 ReactDOM.render(
