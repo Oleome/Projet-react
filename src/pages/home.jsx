@@ -2,7 +2,7 @@ import Appartement from '../appartements';
 
 function App() {
   return (
-    <Appartement />
+    <h1>Home</h1>
   )}
 
 export default App;
