@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import logo from '../../assets/logo.png'
 
 const StyledLinked = styled(Link)`
-    padding-left: 57px;
     font-size: 24px;
     text-decoration: none;
     &:hover {
@@ -21,8 +20,12 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
+    padding: 2% 5%;
     background-color: #E5E5E5;
+`
+
+const StyledNav = styled.nav`
+    white-space: nowrap;
 `
 
 
@@ -30,10 +33,10 @@ function Header() {
     return (
         <StyledHeader>
             <KasaLogo src={logo} alt="logo de kasa" />
-            <nav>
+            <StyledNav>
                 <StyledLinked to="/">Accueil</StyledLinked>
                 <StyledLinked to="/A-propos">A-propos</StyledLinked>
-            </nav>
+            </StyledNav>
         </StyledHeader>
     )
 }

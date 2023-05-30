@@ -1,6 +1,12 @@
+import styled from 'styled-components'
+
+const StyledTitle = styled.span`
+    
+`
+
 function Card({ title, description, cover, tags }) {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', padding: 15 }}>
+        <div>
             <span>{title}</span>
             <p>{description}</p>
             <img src={cover} alt="appartement" width={250} height={150} />
