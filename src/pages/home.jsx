@@ -1,4 +1,4 @@
-import Appartement from '../../appartements';
+import Appartement from '../appartements';
 
 function App() {
   return (

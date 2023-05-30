@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/';
-import APropos from './pages/A-propos/index';
+import Home from './pages/home';
+import APropos from './pages/aPropos';
 import Header from './components/Header/index';
 import Footer from './components/Footer';
 import Error from './components/Error';
-import './styles/index.css'
  
 ReactDOM.render(
     <React.StrictMode>

@@ -10,6 +10,12 @@ const StyledLinked = styled(Link)`
         text-decoration: underline;
         cursor: pointer;
     }
+    @media screen and (max-width: 960px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 650px) {
+        font-size: 12px;
+    }
 `
 
 const KasaLogo = styled.img`
