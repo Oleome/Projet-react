@@ -5,6 +5,7 @@ import logo from '../../assets/logo.png'
 const StyledLinked = styled(Link)`
     font-size: 24px;
     text-decoration: none;
+    padding-left: 40px;
     &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -12,8 +13,8 @@ const StyledLinked = styled(Link)`
 `
 
 const KasaLogo = styled.img`
-    width: 210px;
-    height: 68px;
+    width: 16%;
+    height: auto;
 `
 
 const StyledHeader = styled.header`
