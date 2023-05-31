@@ -7,11 +7,11 @@ const StyledContainer = styled.div`
   min-width: 300px;
 `
 
-function App() {
-  return (
-    <StyledContainer>
-      <Appartement />
-    </StyledContainer>
-  )}
-
-export default App;
+function FicheLogement () {
+    return (
+        <StyledContainer>
+          <Appartement />
+        </StyledContainer>
+      )}
+    
+export default FicheLogement;
