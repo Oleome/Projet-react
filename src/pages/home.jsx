@@ -1,8 +1,15 @@
 import Appartement from '../appartements';
+import styled from 'styled-components';
+
+const StyledContainer = styled.div`
+  background-color: #E5E5E5;
+`
 
 function App() {
   return (
-    <h1>Home</h1>
+    <StyledContainer>
+      <h1>Home</h1>
+    </StyledContainer>
   )}
 
 export default App;
