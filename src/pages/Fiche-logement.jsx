@@ -1,4 +1,3 @@
-import Appartement from '../appartements';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
@@ -10,7 +9,7 @@ const StyledContainer = styled.div`
 function FicheLogement () {
     return (
         <StyledContainer>
-          <Appartement />
+          <h2>Fiche logement</h2>
         </StyledContainer>
       )}
     

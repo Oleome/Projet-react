@@ -10,7 +10,7 @@ const StyledContainer = styled.div`
 function App() {
   return (
     <StyledContainer>
-      <Appartement />
+      <h2>Home</h2>
     </StyledContainer>
   )}
 
