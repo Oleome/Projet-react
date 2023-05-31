@@ -37,7 +37,7 @@ function Footer() {
     return (
         <StyledFooter>
             <StyledLogo src={logfoot} alt="logo de kasa" />
-            <StyledSpan>"© 2020 Kasa. All rights reserved"</StyledSpan>
+            <StyledSpan>© 2020 Kasa. All rights reserved</StyledSpan>
         </StyledFooter>
     )
 }
