@@ -1,14 +1,10 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 import styled from 'styled-components'
 import logo from '../../assets/logo.png'
 
-const StyledLinked = styled(Link)`
+const StyledLinked = styled(NavLink)`
     text-decoration: none;
     padding-left: 40px;
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
 `
 
 const KasaLogo = styled.img`
