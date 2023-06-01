@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
-import FicheLogement from './pages/fiche-logement';
 import APropos from './pages/a-propos';
 import Error from './pages/error';
 import Header from './components/Header/index';
@@ -17,7 +16,6 @@ ReactDOM.render(
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/a-propos/" element={<APropos />} />
-            <Route path="/fiche-logement/" element={<FicheLogement />} />
             <Route path="*" element={<Error />} />
           </Routes>
           <Footer />

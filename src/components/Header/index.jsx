@@ -2,9 +2,12 @@ import { NavLink } from "react-router-dom";
 import styled from 'styled-components'
 import logo from '../../assets/logo.png'
 
-const StyledLinked = styled(NavLink)`
+const StyledNavLinked = styled(NavLink)`
     text-decoration: none;
     padding-left: 40px;
+    &.active {
+        text-decoration: underline;
+    }
 `
 
 const KasaLogo = styled.img`
@@ -39,8 +42,8 @@ function Header() {
         <StyledHeader>
             <KasaLogo src={logo} alt="logo de kasa" />
             <StyledNav>
-                <StyledLinked to="/">Accueil</StyledLinked>
-                <StyledLinked to="/A-propos">A-propos</StyledLinked>
+                <StyledNavLinked to="/">Accueil</StyledNavLinked>
+                <StyledNavLinked to="/A-propos">A-propos</StyledNavLinked>
             </StyledNav>
         </StyledHeader>
     )
