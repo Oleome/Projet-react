@@ -6,12 +6,10 @@ import APropos from './pages/a-propos';
 import Error from './pages/error';
 import Header from './components/Header/index';
 import Footer from './components/Footer';
-import GlobalStyle from './styles/globlaStyles'
  
 ReactDOM.render(
     <React.StrictMode>
         <Router>
-          <GlobalStyle />
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />

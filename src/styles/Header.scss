@@ -1,10 +1,33 @@
-.test {
-    text-decoration: none;
-    padding-left: 40px;
-    &.active {
-        text-decoration: underline;
-        color: yellow;
+header {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    padding: 40px 100px 0;
+    font-size: 24px;
+    align-items: center;
+    background-color: #E5E5E5;
+    @media screen and (max-width: 960px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 650px) {
+        font-size: 12px;
+        padding: 20px 20px;
+    }
+
+    img {
+        width: 16%;
+        height: auto;
+    }
+
+    .nav {
+        white-space: nowrap;
+        
+        &-link {
+            text-decoration: none;
+            padding-left: 40px;
+            &.active {
+                text-decoration: underline;
+            }
+        }
     }
 }
-   
-
