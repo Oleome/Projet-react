@@ -1,0 +1,10 @@
+.test {
+    text-decoration: none;
+    padding-left: 40px;
+    &.active {
+        text-decoration: underline;
+        color: yellow;
+    }
+}
+   
+

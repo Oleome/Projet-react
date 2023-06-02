@@ -1,14 +1,8 @@
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components'
 import logo from '../../assets/logo.png'
+import styles from '../../styles/Header.module.scss'
 
-const StyledNavLinked = styled(NavLink)`
-    text-decoration: none;
-    padding-left: 40px;
-    &.active {
-        text-decoration: underline;
-    }
-`
 
 const KasaLogo = styled.img`
     width: 16%;
@@ -42,8 +36,8 @@ function Header() {
         <StyledHeader>
             <KasaLogo src={logo} alt="logo de kasa" />
             <StyledNav>
-                <StyledNavLinked to="/">Accueil</StyledNavLinked>
-                <StyledNavLinked to="/A-propos">A-propos</StyledNavLinked>
+                <NavLink className={styles.test} to="/">Accueil</NavLink>
+                <NavLink className={styles.test} to="/A-propos">A-propos</NavLink>
             </StyledNav>
         </StyledHeader>
     )
