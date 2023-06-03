@@ -1,15 +1,20 @@
-import Cards from '../components/Cards/index'
-import '../data/backend.json'
-
+import Card from '../components/Card/index'
+import jsonData from '../data/backend.json'
 
 
 function App() {
   return (
-    <>
-      <Cards 
+    <div>
+    {jsonData.map((item) => (
+      <Card
+          key={item.id}
+          description={item.description}
+          cover={item.cover}
+          title={item.title}
+          tags={item.tags}
       />
-      <h2>Home</h2>
-    </>
+    ))}
+  </div>
   )}
 
 export default App;
