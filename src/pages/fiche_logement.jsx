@@ -6,21 +6,22 @@ function FicheLogement(props) {
 
     let { key } = useParams();
     console.log(key)
-
+    console.log(jsonData)
     return (
-        
+        jsonData.map((appart) => appart.id === key ?
         <Card
-              key={props.user}
-              description={props.description}
-              cover={props.cover}
-              title={props.title}
-              tags={props.tags}
-              equipments={props.equipments}
-              rating={props.rating}
-              location={props.location}
+              key={appart.id}
+              description={appart.description}
+              cover={appart.cover}
+              title={appart.title}
+              tags={appart.tags}
+              equipments={appart.equipments}
+              rating={appart.rating}
+              location={appart.location}
         />
+        : null
        
-        
+        )
     )
 }
 
