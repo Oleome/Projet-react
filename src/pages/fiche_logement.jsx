@@ -3,12 +3,14 @@ import Card from '../components/Card'
 import { useParams } from 'react-router-dom'
 
 function FicheLogement(props) {
-    const { key } = useParams();
+
+    let { key } = useParams();
+    console.log(key)
+
     return (
-        <> 
-          
+        
         <Card
-              key={props.id}
+              key={props.user}
               description={props.description}
               cover={props.cover}
               title={props.title}
@@ -17,7 +19,7 @@ function FicheLogement(props) {
               rating={props.rating}
               location={props.location}
         />
-        </>
+       
         
     )
 }
