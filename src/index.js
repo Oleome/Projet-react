@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import APropos from './pages/a-propos';
 import Error from './pages/error';
-import Header from './components/Header/index';
-import Footer from './components/Footer';
+import Header from './layout/Header/index';
+import Footer from './layout/Footer/index';
  
 ReactDOM.render(
     <React.StrictMode>
