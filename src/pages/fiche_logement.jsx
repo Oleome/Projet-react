@@ -2,14 +2,13 @@ import jsonData from '../data/backend.json'
 import Card from '../components/Card'
 import { useParams } from 'react-router-dom'
 
-function FicheLogement(props) {
+function FicheLogement() {
 
     let { key } = useParams();
-    console.log(key)
-    console.log(jsonData)
+    
     return (
         jsonData.map((appart) => appart.id === key ?
-        <Card
+        <Card 
               key={appart.id}
               description={appart.description}
               cover={appart.cover}
