@@ -16,6 +16,9 @@ function App() {
               cover={item.cover}
               title={item.title}
               tags={item.tags}
+              equipments={item.equipments}
+              rating={item.rating}
+              location={item.location}
           />
         ))} */}
 
