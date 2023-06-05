@@ -21,7 +21,7 @@ function App() {
               location={item.location}
           />
         ))} */}
-
+        <div>bonjour</div>
       </section>
     </main>
   )}
