@@ -1,4 +1,5 @@
-import fond_mer from '../assets/fond_mer.png'
+import fond_mer from '../../assets/fond_mer.png'
+import '../../styles/home.scss'
 
 function Banner() {
     return (

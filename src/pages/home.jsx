@@ -1,27 +1,23 @@
 import Card from '../components/Card/index'
 import jsonData from '../data/backend.json'
 import '../styles/home.scss'
-import fond_mer from '../assets/fond_mer.png'
+import { useParams } from 'react-router-dom'
+import Banner from '../components/Banner'
+import { Link } from 'react-router-dom'
+
 
 
 function App() {
   return (
     <main>
-      <img className='container1' src={fond_mer} alt="" />
+      <Banner />
       <section className='container2'>
-        {/* {jsonData.map((item) => (
-          <Card
-              key={item.id}
-              description={item.description}
-              cover={item.cover}
-              title={item.title}
-              tags={item.tags}
-              equipments={item.equipments}
-              rating={item.rating}
-              location={item.location}
-          />
-        ))} */}
-        <div>bonjour</div>
+        <Link to='/fiche_logement/' className='container2__title' key={jsonData[0].id}><span>{jsonData[0].title}</span></Link>
+        <div onClick={() => <Link to='/fiche_logement/' />} className='container2__title' key={jsonData[1].id}><span>{jsonData[1].title}</span></div>
+        <div className='container2__title' key={jsonData[2].id}><span>{jsonData[2].title}</span></div>
+        <div className='container2__title' key={jsonData[3].id}><span>{jsonData[3].title}</span></div>
+        <div className='container2__title' key={jsonData[4].id}><span>{jsonData[4].title}</span></div>
+        <div className='container2__title' key={jsonData[5].id}><span>{jsonData[5].title}</span></div>
       </section>
     </main>
   )}

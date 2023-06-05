@@ -1,20 +1,24 @@
 import jsonData from '../data/backend.json'
 import Card from '../components/Card'
+import { useParams } from 'react-router-dom'
 
-function FicheLogement() {
+function FicheLogement(props) {
+    const { key } = useParams();
     return (
-        jsonData.map((item) => (
-          <Card
-              key={item.id}
-              description={item.description}
-              cover={item.cover}
-              title={item.title}
-              tags={item.tags}
-              equipments={item.equipments}
-              rating={item.rating}
-              location={item.location}
-          />
-        ))
+        <> 
+          
+        <Card
+              key={props.id}
+              description={props.description}
+              cover={props.cover}
+              title={props.title}
+              tags={props.tags}
+              equipments={props.equipments}
+              rating={props.rating}
+              location={props.location}
+        />
+        </>
+        
     )
 }
 

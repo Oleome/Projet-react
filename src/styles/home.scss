@@ -19,4 +19,16 @@ main {
     height: 829px;
     margin: 43px 0;
     background-color: #F7F7F7;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .container2__title {
+        width: 30%;
+        height: 40%;
+        background-color: black;
+        color: #fff;
+    }
 }
