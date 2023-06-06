@@ -31,10 +31,11 @@
     }
 
     &__description--container {
-        width: 400px;
+        width: 45%;
         height: 50px;
         background-color: #FF6060;
         position: relative;
+        border-radius: 10px;
     }
 
     button {
