@@ -19,12 +19,16 @@ function Card({ title, description, cover, tags, location, equipments, rating })
             </ul>
             
             {isOpen ? (
-                <div className="card__description--open">
-                    <button className='card__description--button' onClick={() => setIsOpen(false)}><img className='arrow-up' src={arrow_up} alt="une flèche vers le haut" /></button>
+                <div className="card__description">
+                    <div className='card__description--container'>
+                        <button className='card__description--button' onClick={() => setIsOpen(false)}><img className='arrow-up' src={arrow_up} alt="une flèche vers le haut" /></button>
+                    </div>
                     <span>{description}</span>
                 </div>
             ) : (
-                <button onClick={() => setIsOpen(true)}><img className='arrow-down' src={arrow_down} alt="une flèche vers le bas" /></button>
+                <div className='card__description--container'>
+                    <button onClick={() => setIsOpen(true)}><img className='arrow-down' src={arrow_down} alt="une flèche vers le bas" /></button>
+                </div>
             )}
             
             
