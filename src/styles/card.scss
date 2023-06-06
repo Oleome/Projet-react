@@ -1,4 +1,4 @@
-.card-div {
+.card {
     padding: 50px 100px 30px;
     display: flex;
     flex-direction: column;
@@ -30,9 +30,21 @@
         margin: 35px 0 10px;
     }
 
-    .card-description-close {
-      max-width: 582px;
+    
+
+    button {
+        width: 30px;
     }
+
+    .arrow-up {
+        object-fit: cover;
+    }
+
+    .arrow-down {
+        object-fit: cover;
+    }
+
+   
     
 
 

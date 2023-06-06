@@ -8,7 +8,7 @@ function Card({ title, description, cover, tags, location, equipments, rating })
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="card-div">
+        <div className="card">
             <img className='cover' src={cover} alt="appartement" />
             <h2>{title}</h2>
             <span>{location}</span>
@@ -19,12 +19,12 @@ function Card({ title, description, cover, tags, location, equipments, rating })
             </ul>
             
             {isOpen ? (
-                <div className="card-description-open">
+                <div className="card__description--open">
+                    <button className='card__description--button' onClick={() => setIsOpen(false)}><img className='arrow-up' src={arrow_up} alt="une flèche vers le haut" /></button>
                     <span>{description}</span>
-                    <img onClick={() => setIsOpen(false)} src={arrow_up} alt="une flèche vers le haut" />
                 </div>
             ) : (
-                <img onClick={() => setIsOpen(true)} src={arrow_down} alt="une flèche vers le bas" />
+                <button onClick={() => setIsOpen(true)}><img className='arrow-down' src={arrow_down} alt="une flèche vers le bas" /></button>
             )}
             
             
