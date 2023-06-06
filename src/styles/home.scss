@@ -28,7 +28,15 @@ main {
     .container2__title {
         width: 30%;
         height: 40%;
-        background-color: black;
+        background-color: #FF6060;
         color: #fff;
+        position: relative;
+        border-radius: 10px;
+
+        span {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+        }
     }
 }

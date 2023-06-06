@@ -23,7 +23,7 @@ function Card({ title, description, cover, tags, location, equipments, rating })
                     <div className='card__description--container'>
                         <button className='card__description--button' onClick={() => setIsOpen(false)}><img className='arrow-up' src={arrow_up} alt="une flèche vers le haut" /></button>
                     </div>
-                    <span>{description}</span>
+                    <p className='description'>{description}</p>
                 </div>
             ) : (
                 <div className='card__description--container'>
