@@ -6,6 +6,7 @@ import { useState } from 'react'
 function Card({ title, description, cover, tags, location, equipments, rating }) {
 
     const [isOpen, setIsOpen] = useState(false)
+  
 
     return (
         <div className="card">
