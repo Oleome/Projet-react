@@ -13,6 +13,7 @@
     ul {
         display: flex; 
         gap: 50px;
+        padding-inline-start: 0;
     }
 
     li {
@@ -24,7 +25,15 @@
         list-style-type: none;
     }
 
+    h2 {
+        font-size: 36px;
+        margin: 35px 0 10px;
+    }
 
+    .card-description-close {
+      max-width: 582px;
+    }
+    
 
 
 }
