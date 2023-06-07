@@ -63,7 +63,11 @@
         padding: 18px 28px 20px 20px;
     }
     
-    .fade-in{
+    .fade {
+        transition: transform 10s;
+    }
+
+    .fade .out {
         transform: translateY(100%);
     }
 
