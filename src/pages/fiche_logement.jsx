@@ -1,5 +1,5 @@
 import jsonData from '../data/backend.json'
-import Card from '../components/Card'
+import Fiche from '../components/Fiche-logement/index'
 import { useParams } from 'react-router-dom'
 
 function FicheLogement() {
@@ -8,7 +8,7 @@ function FicheLogement() {
     
     return (
         jsonData.map((appart) => appart.id === key ?
-        <Card 
+        <Fiche 
               key={appart.id}
               description={appart.description}
               cover={appart.cover}

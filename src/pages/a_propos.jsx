@@ -1,4 +1,4 @@
-import '../styles/card.scss'
+import '../styles/fiche.scss'
 import arrow_up from '../assets/arrow_up.png'
 import arrow_down from '../assets/arrow_up.png'
 import { useState } from 'react'
