@@ -1,9 +1,6 @@
-import Card from '../components/Card/index'
 import jsonData from '../data/backend.json'
 import '../styles/home.scss'
-import { useParams } from 'react-router-dom'
 import Banner from '../components/Banner'
-import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 
