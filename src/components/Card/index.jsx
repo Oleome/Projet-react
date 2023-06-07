@@ -25,9 +25,7 @@ function Card({ title, description, cover, tags, location, equipments, rating })
                     <div className='card__description--container'>
                         <button className='card__description--button' onClick={() => setIsOpen(false)}><img className='arrow-up' src={arrow_up} alt="une flèche vers le haut" /></button>
                     </div>
-                    <Fade visible={isOpen}>
-                        <p className='description'>{description}</p>
-                    </Fade>
+                        <p className='open'>{description}</p>
                 </div>
             ) : (
                 <div className='card__description--container'>

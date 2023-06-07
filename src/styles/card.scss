@@ -55,20 +55,18 @@
         object-fit: cover;
     }
 
-    .description {
+    .open {
         background-color: #F6F6F6;
         width: 45%;
         height: 220px;
         margin: 0;
         padding: 18px 28px 20px 20px;
+        transform: translateY(100%);
+        transform-origin: top;
     }
     
-    .fade {
-        transition: transform 10s;
-    }
-
-    .fade .out {
-        transform: translateY(100%);
+    .close {
+        transition: transform 3s;
     }
 
 }
