@@ -38,7 +38,12 @@
         border-radius: 10px;
     }
 
-    .collapse__equipment--liste {
+    .collapse__globaldiv {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .collapse__equipment {
         
         padding-inline-start: 0;
 
@@ -66,7 +71,7 @@
 
     .collapse-open {
         background-color: #F6F6F6;
-        width: 45%;
+        width: 100%;
         height: 220px;
         margin: 0;
         padding: 18px 28px 20px 20px;

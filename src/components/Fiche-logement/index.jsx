@@ -15,15 +15,16 @@ function Fiche({ title, description, cover, tags, location, equipments, rating }
                 <li className='tags__liste--li' key={tagsName}>{ tagsName }</li>
             ))}
             </ul>
-            <Collapse>
-                <p className='collapse__description'>{description}</p>
-            </Collapse>
-            <Collapse>
-                <ul className='collapse__equipment--liste'>{equipments.map((equipment) => (
-                    <li key={equipment}>{ equipment }</li>
-                ))}</ul>
-            </Collapse>
-            
+            <div className='collapse__globaldiv'>
+                <Collapse>
+                    <p className='collapse__description'>{description}</p>
+                </Collapse>
+                <Collapse>
+                    <ul className='collapse__equipment'>{equipments.map((equipment) => (
+                        <li key={equipment}>{ equipment }</li>
+                    ))}</ul>
+                </Collapse>
+            </div>
             
             
             <span>{equipments}</span>  
