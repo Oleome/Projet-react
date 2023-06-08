@@ -10,8 +10,8 @@ function Collapse({children, title}) {
     return (
         <>
             <div className='collapse__container'>
+                <span className='collapse__title'>{title}</span>
                 <button className='collapse__button' onClick={() => setIsOpen(!isOpen)}>
-                    <span className='collapse__title'>{title}</span>
                     <img className={`arrow ${isOpen ? 'arrow-down' : 'arrow-up'}`} src={isOpen ? arrow_down : arrow_up} alt="flèche" />
                 </button>
             </div>
