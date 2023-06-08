@@ -15,7 +15,7 @@ function Collapse({children, title}) {
                     <img className={`arrow ${isOpen ? 'arrow-down' : 'arrow-up'}`} src={isOpen ? arrow_down : arrow_up} alt="flèche" />
                 </button>
             </div>
-            <p className={`collapse ${isOpen ? 'collapse-open' : 'collapse-close'}`}>{children}</p>
+            <div className={`collapse ${isOpen ? 'collapse-open' : 'collapse-close'}`}>{children}</div>
         </>
     )
 }
