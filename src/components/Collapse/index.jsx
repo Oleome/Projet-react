@@ -1,21 +1,21 @@
 import arrow_up from '../../assets/arrow_up.png'
 import arrow_down from '../../assets/arrow_down.png'
-import '../../styles/fiche.scss'
+import '../../styles/collapse.scss'
 import { useState } from 'react'
 
-function Collapse({children}) {
+function Collapse({children, title}) {
 
     const [isOpen, setIsOpen] = useState(false)
 
     return (
         <>
-            <div className='fiche__collapse--container'>
-                <button className='fiche__collapse--button' onClick={() => setIsOpen(!isOpen)}>
+            <div className='collapse__container'>
+                <button className='collapse__button' onClick={() => setIsOpen(!isOpen)}>
+                    <span className='collapse__title'>{title}</span>
                     <img className={`arrow ${isOpen ? 'arrow-down' : 'arrow-up'}`} src={isOpen ? arrow_down : arrow_up} alt="flèche" />
                 </button>
-                <p className={`collapse ${isOpen ? 'collapse-open' : 'collapse-close'}`}>{children}</p>
-
             </div>
+            <p className={`collapse ${isOpen ? 'collapse-open' : 'collapse-close'}`}>{children}</p>
         </>
     )
 }

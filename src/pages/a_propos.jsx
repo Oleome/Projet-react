@@ -1,20 +1,27 @@
+import Banner from '../components/Banner'
+import Collapse from '../components/Collapse'
+import '../styles/collapse.scss'
+import '../styles/home.scss'
 import '../styles/fiche.scss'
-import arrow_up from '../assets/arrow_up.png'
-import arrow_down from '../assets/arrow_up.png'
-import { useState } from 'react'
+import fond_a_propos from '../assets/fond_a_propos.png'
 
 function APropos() {
-    const [isOpen, setIsOpen] = useState(false)
 
-    return isOpen ? (
-        <div className='card__description--container'>
-            <button className='card__description--button' onClick={() => setIsOpen(false)}><img className='arrow-up' src={arrow_up} alt="une flèche vers le haut" /></button>
-        </div>
-    ) : (
-        <div className='card__description--container'>
-            <button onClick={() => setIsOpen(true)}><img className='arrow-down' src={arrow_down} alt="une flèche vers le bas" /></button>
-        </div>
-    )
-}
+    return (
+        <main>
+            <Banner>
+                {fond_a_propos}
+            </Banner>
+            <Collapse title="Fiabilité">                
+                <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements et toutes nos information sont régulièrement vérifiées par nos équipes</p>
+            </Collapse>
+            <Collapse>
+            </Collapse>
+            <Collapse>
+            </Collapse>
+            <Collapse>
+            </Collapse>                       
+        </main>
+    )}
 
 export default APropos

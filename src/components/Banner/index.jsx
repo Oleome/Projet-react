@@ -1,9 +1,8 @@
-import fond_mer from '../../assets/fond_mer.png'
 import '../../styles/home.scss'
 
-function Banner() {
+function Banner({children}) {
     return (
-      <img className='container1' src={fond_mer} alt="falaise surplombant la mer" />
+      <img className='container1' src={children} alt="bannière" />
     )
 }
 
