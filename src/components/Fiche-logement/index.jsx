@@ -1,15 +1,12 @@
 import '../../styles/fiche.scss'
-import arrow_up from '../../assets/arrow_up.png'
-import arrow_down from '../../assets/arrow_down.png'
-import { useState } from 'react'
+import Collapse from '../Collapse'
 
 function Fiche({ title, description, cover, tags, location, equipments, rating }) {
 
-    const [isOpen, setIsOpen] = useState(false)
     
 
     return (
-        <div className="card">
+        <div className="fiche">
             <img className='cover' src={cover} alt="appartement" />
             <h2>{title}</h2>
             <span>{location}</span>
@@ -18,14 +15,9 @@ function Fiche({ title, description, cover, tags, location, equipments, rating }
                 <li key={tagsName}>{ tagsName }</li>
             ))}
             </ul>
-            <div className="card__description">
-                <div className='card__description--container'>
-                    <button className='card__description--button' onClick={() => setIsOpen(!isOpen)}>
-                        <img className={`arrow ${isOpen ? 'arrow-down' : 'arrow-up'}`} src={isOpen ? arrow_down : arrow_up} alt="flèche" />
-                    </button>
-                </div>
-                <p className={`collapse ${isOpen ? 'collapse-open' : 'collapse-close'}`}>{description}</p>
-            </div>
+            <Collapse>
+                <p>{description}</p>
+            </Collapse>
             
             
             

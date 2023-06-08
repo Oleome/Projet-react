@@ -1,4 +1,4 @@
-.card {
+.fiche {
     padding: 50px 100px 30px;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
         margin: 35px 0 10px;
     }
 
-    &__description--container {
+    &__collapse--container {
         width: 45%;
         height: 50px;
         background-color: #FF6060;
