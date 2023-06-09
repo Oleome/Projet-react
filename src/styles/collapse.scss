@@ -1,7 +1,7 @@
 .collapse__container {
     display: flex;
+    flex-direction: column;
     width: 45%;
-    height: 50px;
     background-color: #FF6060;
     position: relative;
     border-radius: 10px;
@@ -20,22 +20,28 @@
         bottom: 35%;
         right: 20px;
         position: absolute;
+        cursor: pointer;
 
-        img {  
+        img {
             object-fit: cover;
         }
     }
+}
 
-
+.collapse__header {
+    position: relative; // Comme il y a un enfant en position: absolute, il faut mettre position: relative sinon ça n'aura pas le rendu souhaité
+    height: 50px;
+    cursor: pointer;
+    width: 100%;
 }
 
 
 .collapse-open {
     background-color: #F6F6F6;
-    width: 45%;
     margin: 0;
     padding: 18px 28px 20px 20px;
     display: block;
+    border-radius: 0 0 9px 9px;
 }
 
 .collapse-close {
