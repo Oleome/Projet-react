@@ -29,7 +29,7 @@
 }
 
 .collapse__header {
-    position: relative; // Comme il y a un enfant en position: absolute, il faut mettre position: relative sinon ça n'aura pas le rendu souhaité
+    position: relative; 
     height: 50px;
     cursor: pointer;
     width: 100%;
