@@ -5,35 +5,41 @@
     background-color: #FF6060;
     position: relative;
     border-radius: 10px;
-    align-items: center;
 
-    .collapse__title {
-        font-size: 24px;
-        color: #FFF;
-        padding-left: 15px;
-    }
-
-    .collapse__button {
-        background-color: transparent;
-        border: none;
-        width: 30px;
-        bottom: 35%;
-        right: 20px;
-        position: absolute;
+    .collapse__header {
+        position: relative; 
+        height: 50px;
         cursor: pointer;
+        width: 100%;
+        display: flex;
+        align-items: center;
 
-        img {
-            object-fit: cover;
+            
+        .collapse__title {
+            font-size: 24px;
+            color: #FFF;
+            padding-left: 15px;
         }
+
+        .collapse__button {
+            background-color: transparent;
+            border: none;
+            width: 30px;
+            bottom: 35%;
+            right: 20px;
+            position: absolute;
+            cursor: pointer;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
     }
+
 }
 
-.collapse__header {
-    position: relative; 
-    height: 50px;
-    cursor: pointer;
-    width: 100%;
-}
+
 
 
 .collapse-open {
