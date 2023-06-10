@@ -11,9 +11,9 @@ function Fiche({ title, description, cover, tags, location, equipments, rating }
             <h2>{title}</h2>
             <span>{location}</span>
             <ul className='tags__liste'>
-            {tags.map((tagsName) => (
-                <li className='tags__liste--li' key={tagsName}>{ tagsName }</li>
-            ))}
+                {tags.map((tagsName) => (
+                    <li className='tags__liste--li' key={tagsName}>{ tagsName }</li>
+                ))}
             </ul>
             <div className='collapse__globaldiv'>
                 <Collapse>
