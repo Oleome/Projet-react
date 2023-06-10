@@ -4,18 +4,19 @@ import arrow_right from '../../assets/arrow_right.png'
 
 
 
-function SlideSwow ({children, counter, tableauImage}) {
+function SlideShow ({pictures, counter, tableauImage}) {
 
 tableauImage = []
 
     return (
         <div className=''>
             <div className='' >
+                <img src={pictures} alt="" />
                 <span className=''>1/${tableauImage.length}</span>
-                <button className='' onClick={() => }>
+                <button className=''>
                     <img src={arrow_right} alt="flèche allant à droite" />
                 </button>
-                <button className='' onClick={() => }>
+                <button className=''>
                     <img src={arrow_left} alt="flèche allant à gauche" />
                 </button>
             </div>
@@ -23,4 +24,4 @@ tableauImage = []
     )
 }
 
-export default SlideSwow
+export default SlideShow

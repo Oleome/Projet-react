@@ -1,5 +1,6 @@
 import '../../styles/fiche.scss'
 import Collapse from '../Collapse'
+import SlideShow from '../Slideshow/index'
 
 function Fiche({ title, description, pictures, tags, location, equipments, rating }) {
 
@@ -7,7 +8,9 @@ function Fiche({ title, description, pictures, tags, location, equipments, ratin
 
     return (
         <div className="fiche">
-            <img className='cover' src={pictures} alt="appartement" />
+            <SlideShow>
+                <img src={pictures} alt="" />
+            </SlideShow>
             
             <h2>{title}</h2>
             <span>{location}</span>
