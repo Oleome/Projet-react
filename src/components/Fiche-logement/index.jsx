@@ -8,9 +8,7 @@ function Fiche({ title, description, pictures, tags, location, equipments, ratin
 
     return (
         <div className="fiche">
-            <SlideShow>
-                <img src={pictures} alt="" />
-            </SlideShow>
+            <SlideShow pictures={pictures} />
             
             <h2>{title}</h2>
             <span>{location}</span>

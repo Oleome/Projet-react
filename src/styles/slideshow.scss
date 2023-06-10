@@ -1,0 +1,32 @@
+.slideshow {
+
+    position: relative;
+
+    &__count {
+
+        position: absolute;
+        bottom: 25px;
+        right: 50%;
+        color: #FFF;
+
+    }
+
+    &__right-arrow {
+        position: absolute;
+        bottom: 40%;
+        right: 23px;
+        background-color: transparent;
+        border: none;
+
+    }
+
+    &__left-arrow {
+        position: absolute;
+        bottom: 40%;
+        left: 23px;
+        background-color: transparent;
+        border: none;
+    }
+
+
+}
