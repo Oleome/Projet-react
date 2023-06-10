@@ -16,7 +16,8 @@ function App() {
       </Banner>
       <section className='container2'>
         {jsonData.map((item) => (
-          <Card 
+          <Card
+            key={item.id}
             id={item.id}
             title={item.title}
             cover={item.cover}

@@ -1,13 +1,14 @@
 import '../../styles/fiche.scss'
 import Collapse from '../Collapse'
 
-function Fiche({ title, description, cover, tags, location, equipments, rating }) {
+function Fiche({ title, description, pictures, tags, location, equipments, rating }) {
 
     
 
     return (
         <div className="fiche">
-            <img className='cover' src={cover} alt="appartement" />
+            <img className='cover' src={pictures} alt="appartement" />
+            
             <h2>{title}</h2>
             <span>{location}</span>
             <ul className='tags__liste'>
