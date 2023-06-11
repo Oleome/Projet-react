@@ -11,8 +11,8 @@ function FicheLogement() {
     const appartements = jsonData.filter((appart) => appart.id === key);
       
     return (
-        <>
-        {appartements.map((appart) => (
+        
+        appartements.map((appart) => (
             <div key={appart.id}>
                 <SlideShow pictures={appart.pictures} />
                 <Fiche
@@ -24,8 +24,7 @@ function FicheLogement() {
                     location={appart.location}
                 />
             </div>
-        ))}
-        </>
+        ))        
     );
 }
 
