@@ -14,15 +14,15 @@ function FicheLogement() {
         <>
         {appartements.map((appart) => (
             <div key={appart.id}>
-            <SlideShow pictures={appart.pictures} />
-            <Fiche
-                description={appart.description}
-                title={appart.title}
-                tags={appart.tags}
-                equipments={appart.equipments}
-                rating={appart.rating}
-                location={appart.location}
-            />
+                <SlideShow pictures={appart.pictures} />
+                <Fiche
+                    description={appart.description}
+                    title={appart.title}
+                    tags={appart.tags}
+                    equipments={appart.equipments}
+                    rating={appart.rating}
+                    location={appart.location}
+                />
             </div>
         ))}
         </>
