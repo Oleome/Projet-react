@@ -2,13 +2,12 @@ import '../../styles/fiche.scss'
 import Collapse from '../Collapse'
 import SlideShow from '../Slideshow/index'
 
-function Fiche({ title, description, pictures, tags, location, equipments, rating }) {
+function Fiche({ title, description, tags, location, equipments, rating }) {
 
     
 
     return (
         <div className="fiche">
-            <SlideShow pictures={pictures} />
             
             <h2>{title}</h2>
             <span>{location}</span>

@@ -1,32 +1,32 @@
 import jsonData from '../data/backend.json'
 import Fiche from '../components/Fiche-logement/index'
+import SlideShow from '../components/Slideshow/index'
+
 import { useParams } from 'react-router-dom'
 
 function FicheLogement() {
 
-    let { key } = useParams();
-    const tableauImages = jsonData[0].pictures.map((picture, index) => ({
-        id: index + 1,
-        url: picture
-    }));
-    console.log(tableauImages)
     
+    const { key } = useParams();
+    const appartements = jsonData.filter((appart) => appart.id === key);
+      
     return (
-        jsonData.map((appart) => appart.id === key ?
-        <Fiche 
-              key={appart.id}
-              description={appart.description}
-              pictures={appart.pictures[0]}
-              title={appart.title}
-              tags={appart.tags}
-              equipments={appart.equipments}
-              rating={appart.rating}
-              location={appart.location}
-        />
-        : null
-       
-        )
-    )
+        <>
+        {appartements.map((appart) => (
+            <div key={appart.id}>
+            <SlideShow pictures={appart.pictures} />
+            <Fiche
+                description={appart.description}
+                title={appart.title}
+                tags={appart.tags}
+                equipments={appart.equipments}
+                rating={appart.rating}
+                location={appart.location}
+            />
+            </div>
+        ))}
+        </>
+    );
 }
 
 export default FicheLogement
