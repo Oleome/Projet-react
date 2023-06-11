@@ -22,7 +22,7 @@ const goToPreviousImage = () => {
 };
 
     return (
-        
+        <section>
             <div className='slideshow' >
                 <span className='slideshow__count'>{`${currentIndex + 1}/${pictures.length}`}</span>
                 <button className='slideshow__right-arrow' onClick={goToNextImage}>
@@ -33,7 +33,7 @@ const goToPreviousImage = () => {
                 </button>
                 <img className='slideshow__picture' key={`${pictures}-${index}`} src={pictures[currentIndex]} alt="" />                
             </div>
-        
+        </section>
     )
 }
 

@@ -1,5 +1,5 @@
 import jsonData from '../data/backend.json'
-import Fiche from '../components/Fiche-logement/index'
+import Fiche from '../components/Fiche/index'
 import SlideShow from '../components/Slideshow/index'
 
 import { useParams } from 'react-router-dom'
