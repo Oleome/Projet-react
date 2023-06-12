@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 360px;
     padding: 40px 100px 0;
     font-size: 24px;
     align-items: center;
@@ -15,8 +15,16 @@ header {
     }
 
     img {
-        width: 16%;
+        width: 210px;
         height: auto;
+        @media screen and (max-width: 960px) {
+            width: 170px;
+            height: auto;
+        }
+        @media screen and (max-width: 650px) {
+            width: 145px;
+            height: auto;
+        }
     }
 
     .nav {
