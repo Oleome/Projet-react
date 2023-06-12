@@ -11,9 +11,10 @@ function App() {
 
   return (
     <main>
-      <Banner>
-        {fond_mer}
-      </Banner>
+      <Banner
+        title='Chez vous, partout et ailleurs'
+        children={fond_mer}
+      />
       <section className='container2'>
         {jsonData.map((item) => (
           <Card
