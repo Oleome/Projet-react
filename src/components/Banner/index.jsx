@@ -1,4 +1,4 @@
-import '../../styles/home.scss'
+import '../../styles/banner.scss'
 
 function Banner({children}) {
     return (
