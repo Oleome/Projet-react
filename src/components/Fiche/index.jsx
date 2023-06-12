@@ -1,5 +1,8 @@
 import '../../styles/fiche.scss'
 import Collapse from '../Collapse'
+import etoile_pleine from '../../assets/etoile_pleine.png'
+import etoile_transparente from '../../assets/etoile_transparente.png'
+
 
 function Fiche({ title, description, tags, location, equipments, rating }) {
 
@@ -28,7 +31,7 @@ function Fiche({ title, description, tags, location, equipments, rating }) {
             
             
             <span>{equipments}</span>  
-            <span>{rating}</span>         
+            <span>{rating > 0 ? <span>{rating*etoile_pleine}</span> : <span>{rating*etoile_transparente}</span>}</span>         
             <br/>
         </div>
     )
