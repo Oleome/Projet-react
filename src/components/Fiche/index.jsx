@@ -6,7 +6,7 @@ import etoile_transparente from '../../assets/etoile_transparente.png'
 
 function Fiche({ title, description, tags, location, equipments, rating }) {
 
-    const renderRatingStars = () => {
+    function ratingStars() {
         const stars = [];
         for (let i = 0; i < rating; i++) {
           stars.push(<img key={i} src={etoile_pleine} alt="étoile pleine" />);
@@ -28,7 +28,7 @@ function Fiche({ title, description, tags, location, equipments, rating }) {
                         <li className='tags__liste--li' key={tagsName}>{ tagsName }</li>
                     ))}
                 </ul>
-                <span className='rating'>{renderRatingStars()}</span>         
+                <span className='rating'>{ratingStars()}</span>         
             </div>
             <div className='collapse__globaldiv'>
                 <Collapse>
