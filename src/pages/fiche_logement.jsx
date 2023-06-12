@@ -13,7 +13,7 @@ function FicheLogement() {
     return (
         
         appartements.map((appart) => (
-            <div key={appart.id}>
+            <div className='global-div' key={appart.id}>
                 <SlideShow pictures={appart.pictures} />
                 <Fiche
                     host={appart.host}
