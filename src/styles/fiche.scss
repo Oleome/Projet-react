@@ -7,7 +7,13 @@
     .title__host {
         display: flex;
         justify-content: space-between;
-        margin: 35px 0 10px;
+        align-items: center;
+        margin: 30px 0 0;
+        
+        .fiche__title {
+            font-size: 36px;
+            margin: 0;
+        }
 
         .host__container {
 
@@ -48,10 +54,6 @@
             font-size: 14px;
             list-style-type: none;
         }
-    }
-
-    .fiche__title {
-        font-size: 36px;
     }
 
     .tag__rating {

@@ -20,22 +20,22 @@ const goToNextImage = () => {
   };
 
     return   ( 
-        <section>
-            <div className='slideshow' >
+        <section className='slideshow'>
+            <div className='slideshow__container' >
                 { pictures.length > 1 ? ( 
                     <>
-                        <span className='slideshow__count'>{`${currentIndex + 1}/${pictures.length}`}</span> 
-                        <button className='slideshow__right-arrow' onClick={goToNextImage}>
+                        <span className='slideshow__container--count'>{`${currentIndex + 1}/${pictures.length}`}</span> 
+                        <button className='slideshow__container--rightarrow' onClick={goToNextImage}>
                             <img src={arrow_right} alt="flèche allant à droite" />
                         </button>
-                        <button className='slideshow__left-arrow' onClick={goToPreviousImage}>
+                        <button className='slideshow__container--leftarrow' onClick={goToPreviousImage}>
                             <img src={arrow_left} alt="flèche allant à gauche" />
                         </button>
                     </>
                 ) : ( 
                 null 
                 )}
-                <img className='slideshow__picture' key={`${pictures}-${index}`} src={pictures[currentIndex]} alt="" />                
+                <img className='slideshow__container--picture' key={`${pictures}-${index}`} src={pictures[currentIndex]} alt="" />                
             </div>
         </section>
     )
