@@ -54,3 +54,12 @@
 
 }
 
+.rating {
+    display: flex;
+    height: 24px;
+}
+
+.tag__rating {
+    display: flex;
+    justify-content: space-between;
+}

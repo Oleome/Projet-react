@@ -6,18 +6,30 @@ import etoile_transparente from '../../assets/etoile_transparente.png'
 
 function Fiche({ title, description, tags, location, equipments, rating }) {
 
-    
+    const renderRatingStars = () => {
+        const stars = [];
+        for (let i = 0; i < rating; i++) {
+          stars.push(<img key={i} src={etoile_pleine} alt="étoile pleine" />);
+        }
+        for (let i = rating; i < 5; i++) {
+          stars.push(<img key={i} src={etoile_transparente} alt="étoile transparente" />);
+        }
+        return stars;
+      };
 
     return (
         <div className="fiche">
             
             <h2>{title}</h2>
             <span>{location}</span>
-            <ul className='tags__liste'>
-                {tags.map((tagsName) => (
-                    <li className='tags__liste--li' key={tagsName}>{ tagsName }</li>
-                ))}
-            </ul>
+            <div className='tag__rating'>
+                <ul className='tags__liste'>
+                    {tags.map((tagsName) => (
+                        <li className='tags__liste--li' key={tagsName}>{ tagsName }</li>
+                    ))}
+                </ul>
+                <span className='rating'>{renderRatingStars()}</span>         
+            </div>
             <div className='collapse__globaldiv'>
                 <Collapse>
                     <p className='collapse__description'>{description}</p>
@@ -31,7 +43,6 @@ function Fiche({ title, description, tags, location, equipments, rating }) {
             
             
             <span>{equipments}</span>  
-            <span>{rating > 0 ? <span>{rating*etoile_pleine}</span> : <span>{rating*etoile_transparente}</span>}</span>         
             <br/>
         </div>
     )
