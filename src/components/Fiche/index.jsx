@@ -31,10 +31,10 @@ function Fiche({ title, description, tags, location, equipments, rating }) {
                 <span className='rating'>{ratingStars()}</span>         
             </div>
             <div className='collapse__globaldiv'>
-                <Collapse>
+                <Collapse title='Description'>
                     <p className='collapse__description'>{description}</p>
                 </Collapse>
-                <Collapse>
+                <Collapse title='Équipements'>
                     <ul className='collapse__equipment'>{equipments.map((equipment) => (
                         <li key={equipment}>{ equipment }</li>
                     ))}</ul>

@@ -30,7 +30,15 @@
         margin: 35px 0 10px;
     }
 
+    .tag__rating {
+        display: flex;
+        justify-content: space-between;
 
+        .rating {
+            display: flex;
+            height: 24px;
+        }
+    }
 
     .collapse__globaldiv {
         display: flex;
@@ -40,6 +48,10 @@
 
     .collapse__container {
         width: 45%;
+
+        .collapse__header {
+            height: 52px;
+        }
     }
 
     .collapse__equipment {
@@ -54,12 +66,5 @@
 
 }
 
-.rating {
-    display: flex;
-    height: 24px;
-}
 
-.tag__rating {
-    display: flex;
-    justify-content: space-between;
-}
+
