@@ -8,7 +8,7 @@ function APropos() {
 
 
     return (
-        <main>
+        <main className='a-propos'>
             <Banner>
                 {fond_a_propos}
             </Banner>

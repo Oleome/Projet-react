@@ -1,15 +1,43 @@
-.a-propos__section {
+.a-propos {
 
-    margin: 38px 0;
-    padding: 0 108px;
+    .banner {
 
-    .collapse__container {
+        @media screen and (max-width: 1000px) {
+            height: 200px;
+        }
+        @media screen and (max-width: 650px) {
+            height: 200px;
+            margin: 0;
+        }
 
-        margin-bottom: 30px;
+    }
 
-        .collapse__header {
+    .a-propos__section {
 
-            height: 52px;
+        margin: 38px 0;
+        padding: 0 108px;
+        @media screen and (max-width: 650px) {
+            padding: 0;
+        }
+
+        .collapse__container {
+
+            margin-bottom: 30px;
+
+            .collapse__header {
+
+                height: 52px;
+
+                .collapse__title {
+
+                    font-size: 13px;
+
+                }
+
+            }
         }
     }
+
+
 }
+

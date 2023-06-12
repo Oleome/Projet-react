@@ -1,6 +1,5 @@
 import '../../styles/fiche.scss'
 import Collapse from '../Collapse'
-import SlideShow from '../Slideshow/index'
 
 function Fiche({ title, description, tags, location, equipments, rating }) {
 
