@@ -4,6 +4,31 @@
     flex-direction: column;
     color: #FF6060;
 
+    .title__host {
+        display: flex;
+        justify-content: space-between;
+        margin: 35px 0 10px;
+
+        .host__container {
+
+            display: flex;
+            align-items: center;
+
+            .host__name {
+                font-size: 18px;
+            }
+    
+            .host__picture {
+                width: 64px;
+                height: 64px;
+                border-radius: 50px;
+                margin-left: 10px;
+            }
+
+        }
+
+    }
+
     img {
         width: 100%;
         max-height: 485px;
@@ -25,9 +50,8 @@
         }
     }
 
-    h2 {
+    .fiche__title {
         font-size: 36px;
-        margin: 35px 0 10px;
     }
 
     .tag__rating {

@@ -16,6 +16,7 @@ function FicheLogement() {
             <div key={appart.id}>
                 <SlideShow pictures={appart.pictures} />
                 <Fiche
+                    host={appart.host}
                     description={appart.description}
                     title={appart.title}
                     tags={appart.tags}
