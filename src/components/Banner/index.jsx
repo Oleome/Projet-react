@@ -1,8 +1,11 @@
 import '../../styles/banner.scss'
 
-function Banner({children}) {
+function Banner({children, title}) {
     return (
-      <img className='container1' src={children} alt="bannière" />
+      <div className='container1'> 
+        <span>{title}</span>
+        <img src={children} alt="bannière" />
+      </div>
     )
 }
 
