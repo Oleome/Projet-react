@@ -2,16 +2,20 @@ import jsonData from '../data/backend.json'
 import Fiche from '../components/Fiche/index'
 import SlideShow from '../components/Slideshow/index'
 
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 
 function FicheLogement() {
 
     
     const { key } = useParams();
     const appartements = jsonData.filter((appart) => appart.id === key);
+    
+    if(appartements.length === 0) {
+        return <Navigate to='/error/' replace/>
+    }
       
     return (
-        
+                
         appartements.map((appart) => (
             <div className='global-div' key={appart.id}>
                 <SlideShow pictures={appart.pictures} />
