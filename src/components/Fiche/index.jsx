@@ -18,22 +18,25 @@ function Fiche({ title, description, tags, location, equipments, rating, host })
       };
 
     return (
-        <div className="fiche">
-            <div className='title__host'>
-                <h2 className='fiche__title'>{title}</h2>
-                <div className='host__container'>
-                    <span className='host__name'>{host.name}</span>
-                    <img className='host__picture' src={host.picture} alt="portrait de l'hôte" />
+        <>
+            <div className="fiche">
+                <div className='title__rating'>
+                    <h2 className='fiche__title'>{title}</h2>
+                    <span>{location}</span>
+                    <ul className='tags__liste'>
+                        {tags.map((tagsName) => (
+                            <li className='tags__liste--li' key={tagsName}>{ tagsName }</li>
+                        ))}
+                    </ul>
                 </div>
-            </div>
-            <span>{location}</span>
-            <div className='tag__rating'>
-                <ul className='tags__liste'>
-                    {tags.map((tagsName) => (
-                        <li className='tags__liste--li' key={tagsName}>{ tagsName }</li>
-                    ))}
-                </ul>
-                <span className='rating'>{ratingStars()}</span>         
+                <div className='tag__host'>
+                    <div className='host__container'>
+                        <span className='host__name'>{host.name}</span>
+                        <img className='host__picture' src={host.picture} alt="portrait de l'hôte" />
+                    </div>
+                    <span className='rating'>{ratingStars()}</span>         
+                </div>
+                        
             </div>
             <div className='collapse__globaldiv'>
                 <Collapse title='Description'>
@@ -44,8 +47,9 @@ function Fiche({ title, description, tags, location, equipments, rating, host })
                         <li key={equipment}>{ equipment }</li>
                     ))}</ul>
                 </Collapse>
-            </div>            
-        </div>
+            </div>  
+        </>
+
     )
 }
  
