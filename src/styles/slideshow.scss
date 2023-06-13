@@ -1,6 +1,9 @@
 .slideshow {
 
     padding: 50px 100px 0px;
+    @media screen and (max-width: 750px) {
+        padding: 0;
+    }
 
     .slideshow__container {
 
