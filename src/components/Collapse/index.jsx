@@ -3,12 +3,12 @@ import arrow_down from '../../assets/arrow_down.png'
 import '../../styles/collapse.scss'
 import { useState } from 'react'
 
-function Collapse({children, title}) {
+function Collapse({children, title, containerClass}) {
 
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className='collapse__container'>
+        <div className={`collapse__container ${containerClass}`}>
             <div className='collapse__header' onClick={() => setIsOpen(!isOpen)}>
                 <span className='collapse__title'>{title}</span>
                 <button className='collapse__button'>

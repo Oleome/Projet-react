@@ -5,6 +5,9 @@
     position: relative;
     border-radius: 10px;
 
+
+
+
     .collapse__header {
         position: relative; 
         height: 50px;
@@ -52,4 +55,25 @@
 
 .collapse-close {
     display: none;
+}
+
+
+.collapse__container--fiche {
+    display: flex;
+    width: 45%;
+}
+
+.collapse__globaldiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.collapse__equipment {
+
+    padding-inline-start: 0;
+
+    li {
+        list-style-type: none;
+    }
 }

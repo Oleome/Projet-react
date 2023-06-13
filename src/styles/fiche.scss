@@ -38,9 +38,9 @@
         }     
 
         .tag__host {
-            display: block;
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            align-items: center;
             @media screen and (max-width: 750px) {
                 
             }
@@ -49,6 +49,7 @@
 
                 display: flex;
                 align-items: center;
+                margin-top: 24px;
 
                 .host__name {
                     font-size: 18px;
@@ -64,23 +65,13 @@
 
             .rating {
                 display: flex;
+                justify-content: flex-end;
                 height: 24px;
+                margin-bottom: 16px;
             }
         }
 
-        .collapse__globaldiv {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-
-            
-            .collapse__container {
-                width: 45%;
-
-                .collapse__header {
-                    height: 52px;
-                }
-            }
+        
 
             .collapse__equipment {
 
@@ -90,6 +81,6 @@
                     list-style-type: none;
                 }
             }
-        }
+        
     }
 }

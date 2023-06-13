@@ -39,10 +39,10 @@ function Fiche({ title, description, tags, location, equipments, rating, host })
                         
             </div>
             <div className='collapse__globaldiv'>
-                <Collapse title='Description'>
+                <Collapse title='Description' containerClass='collapse__container--fiche'>
                     <p className='collapse__description'>{description}</p>
                 </Collapse>
-                <Collapse title='Équipements'>
+                <Collapse title='Équipements' containerClass='collapse__container--fiche'>
                     <ul className='collapse__equipment'>{equipments.map((equipment) => (
                         <li key={equipment}>{ equipment }</li>
                     ))}</ul>
