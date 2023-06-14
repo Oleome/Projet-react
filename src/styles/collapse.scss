@@ -61,12 +61,19 @@
 .collapse__container--fiche {
     display: flex;
     width: 45%;
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 .collapse__globaldiv {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
 }
 
 .collapse__equipment {

@@ -1,7 +1,7 @@
 .global-div {
 
     padding: 50px 100px 50px;
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 900px) {
         padding: 30px 20px 27px;
     }
 
@@ -9,7 +9,7 @@
         display: flex;
         justify-content: space-between;
         color: #FF6060;
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 900px) {
              display: block;   
         }
 
@@ -29,6 +29,8 @@
                 gap: 50px;
                 padding-inline-start: 0;
                 margin: 20px 0 24px;
+                flex-wrap: wrap;
+                gap: 10px;
     
                 &--li {
                     padding: 3px 30px;
@@ -37,6 +39,9 @@
                     background-color: #FF6060;
                     font-size: 14px;
                     list-style-type: none;
+                    @media screen and (max-width: 900px) {
+                        padding: 3px 27px;
+                    }
                 }
             }
         }     
@@ -45,7 +50,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            @media screen and (max-width: 750px) {
+            @media screen and (max-width: 900px) {
                 flex-direction: row; 
                 margin: 0 0 13.5px;
             }
@@ -56,7 +61,7 @@
                 align-items: center;
                 margin-top: 24px;
                 order: 1;
-                @media screen and (max-width: 750px) {
+                @media screen and (max-width: 900px) {
                     order: 2;
                     margin: 0;
                 }
@@ -79,7 +84,7 @@
                 height: 24px;
                 margin-bottom: 24px;
                 order: 2;
-                @media screen and (max-width: 750px) {
+                @media screen and (max-width: 900px) {
                     order: 1;
                     align-self: center;
                     margin: 0;
