@@ -9,6 +9,9 @@
         display: flex;
         justify-content: space-between;
         color: #FF6060;
+        @media screen and (max-width: 750px) {
+             display: block;   
+        }
 
         .title__rating {
             display: block;
@@ -25,6 +28,7 @@
                 display: flex;
                 gap: 50px;
                 padding-inline-start: 0;
+                margin: 20px 0 24px;
     
                 &--li {
                     padding: 3px 30px;
@@ -42,7 +46,8 @@
             flex-direction: column;
             justify-content: space-between;
             @media screen and (max-width: 750px) {
-                
+                flex-direction: row; 
+                margin: 0 0 13.5px;
             }
 
             .host__container {
@@ -50,6 +55,11 @@
                 display: flex;
                 align-items: center;
                 margin-top: 24px;
+                order: 1;
+                @media screen and (max-width: 750px) {
+                    order: 2;
+                    margin: 0;
+                }
 
                 .host__name {
                     font-size: 18px;
@@ -67,7 +77,13 @@
                 display: flex;
                 justify-content: flex-end;
                 height: 24px;
-                margin-bottom: 16px;
+                margin-bottom: 24px;
+                order: 2;
+                @media screen and (max-width: 750px) {
+                    order: 1;
+                    align-self: center;
+                    margin: 0;
+                }
             }
         }         
     }
