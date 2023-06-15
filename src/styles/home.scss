@@ -33,10 +33,7 @@ main {
             color: #fff;
             position: relative;
             border-radius: 10px;
-            @media screen and (max-width: 1000px) {
-                height: 20%;
-            }
-            @media screen and (max-width: 650px) {
+            @media screen and (max-width: 750px) {
                 width: 100%;
                 height: auto;
             }
@@ -57,10 +54,7 @@ main {
                     left: 15px;
                     font-size: 18px;
                     padding: 0 20px 20px;
-                    @media screen and (max-width: 1000px) {
-                        padding: 0;
-                    }
-                    @media screen and (max-width: 650px) {
+                    @media screen and (max-width: 750px) {
                         padding: 0 19.5px 15px;
                     }
                 }
