@@ -42,8 +42,6 @@
 }
 
 
-
-
 .collapse-open {
     background-color: #F6F6F6;
     margin: 0;
@@ -51,24 +49,12 @@
     display: block;
     border-radius: 0 0 9px 9px;
     width: 100%;
-    animation: displayblock 10s;
 }
 
 .collapse-close {
     display: none;
-    animation: displayblock 10s;
 }
 
-@keyframes displayblock {
-    from {
-        display: none;
-        transform: scaleY(0);
-    }
-    to {
-        display: block;
-        transform: scaleY(1);
-    }
-}
 
 
 .collapse__container--fiche {
