@@ -1,4 +1,4 @@
-import '../../styles/slideshow.scss'
+import './slideshow.scss'
 import arrow_left from '../../assets/arrow_left.png'
 import arrow_right from '../../assets/arrow_right.png'
 import { useState } from 'react'

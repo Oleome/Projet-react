@@ -5,9 +5,6 @@
     position: relative;
     border-radius: 10px;
 
-
-
-
     .collapse__header {
         position: relative; 
         height: 50px;
@@ -15,8 +12,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-
-            
+          
         .collapse__title {
             font-size: 24px;
             color: #FFF;
@@ -45,7 +41,7 @@
 .collapse-open {
     background-color: #F6F6F6;
     margin: 0;
-    padding: 18px 28px 20px 20px;
+    padding: 18px 20px 20px;
     display: block;
     border-radius: 0 0 9px 9px;
     width: 100%;

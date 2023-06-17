@@ -1,4 +1,4 @@
-import '../../styles/fiche.scss'
+import './fiche.scss'
 import Collapse from '../Collapse'
 import etoile_pleine from '../../assets/etoile_pleine.png'
 import etoile_transparente from '../../assets/etoile_transparente.png'
@@ -41,12 +41,12 @@ function Fiche({ title, description, tags, location, equipments, rating, host })
             <div className='collapse__globaldiv'>
                 <div className='collapse__container--fiche'>
                     <Collapse title='Description'>
-                        <p className='collapse__description'>{description}</p>
+                        <p className='collapse__content collapse__description'>{description}</p>
                     </Collapse>
                 </div>
                 <div className='collapse__container--fiche'>
                     <Collapse title='Équipements'>
-                        <ul className='collapse__equipment'>{equipments.map((equipment) => (
+                        <ul className='collapse__content collapse__equipment'>{equipments.map((equipment) => (
                             <li key={equipment}>{ equipment }</li>
                         ))}</ul>
                     </Collapse>

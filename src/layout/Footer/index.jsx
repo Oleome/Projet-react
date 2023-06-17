@@ -1,5 +1,5 @@
 import '../../styles/global.scss'
-import '../../styles/footer.scss'
+import './footer.scss'
 import logfoot from '../../assets/logfoot.png'
 
 function Footer() {

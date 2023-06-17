@@ -1,6 +1,6 @@
 import arrow_up from '../../assets/arrow_up.png'
 import arrow_down from '../../assets/arrow_down.png'
-import '../../styles/collapse.scss'
+import './collapse.scss'
 import { useState } from 'react'
 
 function Collapse({children, title}) {
