@@ -1,17 +1,18 @@
 .collapse__container {
     display: flex;
     flex-direction: column;
-    background-color: #FF6060;
     position: relative;
     border-radius: 10px;
 
     .collapse__header {
+        background-color: #FF6060;
         position: relative; 
         height: 50px;
         cursor: pointer;
         width: 100%;
         display: flex;
         align-items: center;
+        border-radius: 5px;
           
         .collapse__title {
             font-size: 24px;
@@ -45,12 +46,39 @@
     display: block;
     border-radius: 0 0 9px 9px;
     width: 100%;
+    transform: scaleY(1);
+    animation-name: collapse-open;
+    animation-duration: 500ms;
+    transform-origin: top;
 }
 
 .collapse-close {
-    display: none;
+    max-height: 0;
+    transform: scaleY(0);
+    animation-name: collapse-close;
+    animation-duration: 500ms;
+    transform-origin: top;
 }
 
+@keyframes collapse-open {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes collapse-close {
+    0% {
+        transform: scaleY(1);
+        padding: 18px 20px 20px;    
+    }
+    100% {
+        padding: 0 20px 0;
+        transform: scaleY(0);
+    }
+}
 
 
 .collapse__container--fiche {
