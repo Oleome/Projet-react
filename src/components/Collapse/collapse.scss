@@ -33,11 +33,8 @@
                 object-fit: cover;
             }
         }
-
     }
-
 }
-
 
 .collapse-open {
     background-color: #F6F6F6;
@@ -53,6 +50,7 @@
 }
 
 .collapse-close {
+    display: none;
     max-height: 0;
     transform: scaleY(0);
     animation-name: collapse-close;
@@ -70,11 +68,11 @@
 }
 
 @keyframes collapse-close {
-    0% {
+    from {
         transform: scaleY(1);
         padding: 18px 20px 20px;    
     }
-    100% {
+    to {
         padding: 0 20px 0;
         transform: scaleY(0);
     }
