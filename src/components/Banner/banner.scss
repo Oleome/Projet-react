@@ -32,9 +32,14 @@
     &__title {
         width: 705px;
         position: absolute;
+        @media screen and (max-width: 950px) {
+            font-size: 36px;
+            left: 14px;
+        }
         @media screen and (max-width: 750px) {
             font-size: 24px;
             width: 217px;
+            left: 14px;
         }
     }
 
