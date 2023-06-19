@@ -7,17 +7,17 @@ import { useState } from 'react'
 
 function SlideShow ({pictures, index}) {
 
-const [currentIndex, setCurrentIndex] = useState(0)
+    const [currentIndex, setCurrentIndex] = useState(0)
 
-const goToNextImage = () => {
-    const newIndex = (currentIndex + 1) % pictures.length; 
-    setCurrentIndex(newIndex);
-  };
+    function goToNextImage() {
+        const newIndex = (currentIndex + 1) % pictures.length; 
+        setCurrentIndex(newIndex);
+    };
 
-  const goToPreviousImage = () => {
-    const newIndex = (currentIndex - 1 + pictures.length) % pictures.length;
-    setCurrentIndex(newIndex);
-  };
+    function goToPreviousImage() {
+        const newIndex = (currentIndex - 1 + pictures.length) % pictures.length;
+        setCurrentIndex(newIndex);
+    };
 
     return   ( 
         <section className='slideshow'>
