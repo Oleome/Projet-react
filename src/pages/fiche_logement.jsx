@@ -9,8 +9,8 @@ function FicheLogement() {
     
     const { key } = useParams();
     const appartement = jsonData.find((appart) => appart.id === key);
-    
-    if(appartement.length === 0) {
+    console.log(appartement)
+    if(appartement === undefined) {
         return <Navigate to='/error/' replace/>
     }
       
