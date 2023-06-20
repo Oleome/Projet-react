@@ -13,7 +13,7 @@ function App() {
     <main>
       <Banner
         title='Chez vous, partout et ailleurs'
-        children={fond_mer}
+        picture={fond_mer}
       />
       <section className='container2'>
         {jsonData.map((item) => (

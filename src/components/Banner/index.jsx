@@ -1,9 +1,9 @@
 import './banner.scss'
 
-function Banner({children, title}) {
+function Banner({picture, title}) {
     return (
       <div className='banner'> 
-        <img className='banner__picture' src={children} alt="bannière" />
+        <img className='banner__picture' src={picture} alt="bannière" />
         <span className='banner__title'>{title}</span>
       </div>
     )

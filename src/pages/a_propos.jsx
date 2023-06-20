@@ -9,9 +9,9 @@ function APropos() {
 
     return (
         <main className='a-propos'>
-            <Banner>
-                {fond_a_propos}
-            </Banner>
+            <Banner
+                picture={fond_a_propos}
+            />
             <section className='a-propos__section'>
                 <Collapse title="Fiabilité">                
                     <p className='collapse__content'>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements et toutes nos information sont régulièrement vérifiées par nos équipes</p>
