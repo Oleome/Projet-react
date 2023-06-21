@@ -51,11 +51,6 @@
 
 .collapse-close {
     display: none;
-    max-height: 0;
-    transform: scaleY(0);
-    animation-name: collapse-close;
-    animation-duration: 500ms;
-    transform-origin: top;
 }
 
 @keyframes collapse-open {
@@ -67,16 +62,7 @@
     }
 }
 
-@keyframes collapse-close {
-    from {
-        transform: scaleY(1);
-        padding: 18px 20px 20px;    
-    }
-    to {
-        padding: 0 20px 0;
-        transform: scaleY(0);
-    }
-}
+
 
 
 .collapse__container--fiche {
