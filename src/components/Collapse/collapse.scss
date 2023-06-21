@@ -1,0 +1,98 @@
+.collapse__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+
+    .collapse__header {
+        background-color: #FF6060;
+        position: relative; 
+        height: 50px;
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+          
+        .collapse__title {
+            font-size: 24px;
+            color: #FFF;
+            padding-left: 15px;
+        }
+
+        .collapse__button {
+            background-color: transparent;
+            border: none;
+            width: 30px;
+            bottom: 35%;
+            right: 20px;
+            position: absolute;
+            cursor: pointer;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.collapse-open {
+    background-color: #F6F6F6;
+    margin: 0;
+    padding: 18px 20px 20px;
+    display: block;
+    border-radius: 0 0 9px 9px;
+    width: 100%;
+    transform: scaleY(1);
+    animation-name: collapse-open;
+    animation-duration: 500ms;
+    transform-origin: top;
+}
+
+.collapse-close {
+    display: none;
+}
+
+@keyframes collapse-open {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+
+
+
+.collapse__container--fiche {
+    display: flex;
+    width: 45%;
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .collapse__container {
+        width: 100%;
+    }
+
+}
+
+.collapse__globaldiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+.collapse__equipment {
+
+    padding-inline-start: 0;
+
+    li {
+        list-style-type: none;
+    }
+}
