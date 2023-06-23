@@ -11,7 +11,7 @@ function FicheLogement() {
     const appartement = jsonData.find((appart) => appart.id === key);
     console.log(appartement)
     if(appartement === undefined) {
-        return <Navigate to='/error/' replace/>
+        return <Navigate to='/error/' />
     }
       
     return (
